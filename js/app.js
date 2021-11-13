@@ -41,16 +41,14 @@ btnTakePhoto.on('click', () => {
     camera.off();
 
 
-    let photoHtml = $(`<div class="col-sm-6" style="margin-top:2%;">
-                            <div class="card" style="width: 300px;">
-                            <center>                                
+    let photoHtml = $(`<div class="col-sm-6" 
+                        <div class="card" style="width: 300px;">
                             <img src="${camera.takePhoto()}" width="300" height="300" id="photoUser">
-                            </center>
-                                <div class="card-body">
-                                    <p class="card-text">${tipo}</p>
-                                </div>
+                            <div class="card-body">
+                                <p class="card-text">${tipo}</p>
                             </div>
-                        </div>`);
+                        </div>
+                    </div>`);
     $("#divPhoto").append(photoHtml)
 
     // photoUser.attr('src',camera.takePhoto());
