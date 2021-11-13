@@ -41,7 +41,7 @@ btnTakePhoto.on('click', () => {
     camera.off();
 
 
-    let photoHtml = $(`<div class="col-sm-6" style="margin-left:35%; margin-top:2%;">
+    let photoHtml = $(`<div class="col-md-12" style="margin-top:2%;">
                             <div class="card" style="width: 300px;">
                                 <img src="${camera.takePhoto()}" width="300" height="300" id="photoUser">
                                 <div class="card-body">
